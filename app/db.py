@@ -6,7 +6,7 @@ con = database.cursor()
 def CreatePostsTable():
     con.execute('''
         CREATE TABLE POSTS (
-         ID            INT AUTOINCREMENT PRIMARY KEY,
+         ID            INTEGER AUTOINCREMENT PRIMARY KEY,
          CONTENT       TEXT NOT NULL,
          POSTED_ON     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
          UPVOTES       INT,
